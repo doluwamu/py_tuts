@@ -10,13 +10,17 @@
 
 from math import floor 
 
-principal = int(input("Enter principal amount: "))
-annual_interest_rate = int(input("Enter annual interest rate: ")) # Number is expressed as percentage
-loan_term = int(input("Enter duration of loan: ")) * 12 # Number entered will be converted to months
+def calc_loan_payment():
+    principal = int(input("Enter principal amount: "))
+    annual_interest_rate = int(input("Enter annual interest rate: ")) # Number is expressed as percentage
+    loan_term = int(input("Enter duration of loan: ")) * 12 # Number entered will be converted to months
 
-monthly_interest_rate = (annual_interest_rate / 12) / 100
+    monthly_interest_rate = (annual_interest_rate / 12) / 100
 
-if (principal == None):
-    print("Enter principal")
+    if (principal == None):
+        print("Enter principal")
 
-print(floor(principal * monthly_interest_rate))
+    print(floor(principal * monthly_interest_rate))
+
+
+calc_loan_payment()

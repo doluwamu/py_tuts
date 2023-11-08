@@ -8,9 +8,13 @@
 # Display a message that greets the user using their full name, for example, "Hello, John Doe!"
 # Count and display the total number of characters in the full name (including spaces).
 
-first_name = input("What is your first name: ")
-last_name = input("What is your last name: ")
-full_name = f"{first_name} {last_name}"
+def string_manipulation():
+    first_name = input("What is your first name: ")
+    last_name = input("What is your last name: ")
+    full_name = f"{first_name} {last_name}"
 
-print(f"Hi {full_name}!")
-print(f"Your name is {full_name.__len__()} characters long")
+    print(f"Hi {full_name}!")
+    print(f"Your name is {full_name.__len__()} characters long")
+
+
+string_manipulation()

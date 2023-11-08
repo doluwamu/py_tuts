@@ -7,15 +7,20 @@
 # Ask the user whether they want to perform addition or subtraction by entering "+" or "-".
 # Based on the user's choice, calculate and display the result.
 
-# Numbers
-num_one = int(input('Enter first number: '))
-num_two = int(input('Enter second number: '))
+def text_based_calculator():
+    # Numbers
+    num_one = int(input('Enter first number: '))
+    num_two = int(input('Enter second number: '))
 
-# Operation
-operation = input("What operation do you want to perform (+ or -): ")
+    # Operation
+    operation = input("What operation do you want to perform (+ or -): ")
 
-if(operation == "-"):
-    print(num_one - num_two)
+    if(operation == "-"):
+        print(num_one - num_two)
 
-else:
-    print(num_one + num_two)
+    else:
+        print(num_one + num_two)
+
+
+
+text_based_calculator()
